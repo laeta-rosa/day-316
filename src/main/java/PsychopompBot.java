@@ -6,12 +6,12 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 public class PsychopompBot extends TelegramLongPollingBot {
     @Override
     public String getBotUsername() {
-        return "Day316PsychopompBot";
+        return "d316_bot";
     }
 
     @Override
     public String getBotToken() {
-        return "2089412411:AAGfUCuExYStyhhEJzPjLl49QHlfPl03hr8";
+        return "2073692524:AAEcVN9P5y72r9t_kymnaREDntgMvkQ1x_4";
     }
 
     @Override

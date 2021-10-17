@@ -1,0 +1,10 @@
+*.class
+hs_err_pid*
+.idea/
+copyright/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
