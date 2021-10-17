@@ -8,3 +8,9 @@ copyright/
 .classpath
 .project
 .settings/
+bin/
+build/
+.gradle
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar
