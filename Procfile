@@ -1,1 +1,1 @@
-web: java -jar build/libs/day-316-1.0.jar
+web: gradlew run
