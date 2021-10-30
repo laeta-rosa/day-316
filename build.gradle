@@ -34,6 +34,14 @@ task stage(type: Copy, dependsOn: [clean, build]) {
 }
 stage.mustRunAfter(clean)
 
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'app.BotApp'
+        )
+    }
+}
+
 test {
     useJUnitPlatform()
 }
