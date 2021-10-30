@@ -25,16 +25,23 @@ application {
     mainClass = 'app.BotApp'
 }
 
-task stage(dependsOn: ['build', 'clean', 'jar'])
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.6'
+}
+
+task stage(type: Copy, dependsOn: [clean, build]) {
+    from jar.archiveFile
+    into project.rootDir
+    rename {
+        'app.jar'
+    }
+}
+stage.mustRunAfter(clean)
+
+clean << {
+    project.file('app.jar').delete()
+}
 
 test {
     useJUnitPlatform()
-}
-
-jar {
-    manifest {
-        attributes(
-                'Main-Class': 'app.BotApp'
-        )
-    }
 }
