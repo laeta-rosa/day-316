@@ -25,7 +25,7 @@ application {
     mainClass = 'app.BotApp'
 }
 
-task stage(dependsOn: ['build', 'clean'])
+task stage(dependsOn: ['build', 'clean', 'jar'])
 
 test {
     useJUnitPlatform()
